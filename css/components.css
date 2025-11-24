@@ -1,0 +1,170 @@
+/* Компоненти */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--bright-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--hover-blue);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    color: var(--white);
+}
+
+.btn-orange {
+    background-color: var(--orange);
+}
+
+.btn-orange:hover {
+    background-color: #d35400;
+}
+
+/* Картки */
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid var(--light-gray);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.team article,
+.service-list article {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid var(--light-gray);
+    height: 100%;
+}
+
+.team article:hover,
+.service-list article:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.team img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.team h4 {
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.team p {
+    color: var(--gray);
+    margin-bottom: 0.5rem;
+}
+
+/* Форми */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: var(--transition);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--bright-blue);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-control.error {
+    border-color: var(--orange);
+}
+
+.error-message {
+    color: var(--orange);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-control.error + .error-message {
+    display: block;
+}
+
+/* Спеціальні пропозиції */
+.special-offers {
+    background: linear-gradient(135deg, var(--orange), #f39c12);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.special-offers h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.special-offers li {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+/* Цінові таблиці */
+.personal-training table {
+    margin-top: 2rem;
+}
+
+/* Сервіс список */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.service-list article h3 {
+    color: var(--dark-blue);
+    border-bottom: 2px solid var(--bright-blue);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Команда */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
