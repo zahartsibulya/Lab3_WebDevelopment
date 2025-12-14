@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronCore - Контакти</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .contact-info-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        body.dark-theme .contact-info-item {
+            background: #2d2d2d;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff4500;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">Iron</span>
+                    <span class="logo-text">Core</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="prices.html">Ціни</a></li>
+                        <li><a href="contacts.html" class="active">Контакти</a></li>
+                    </ul>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section fade-in">
+            <h1>Контакти</h1>
+            <p class="intro-text">Ми завжди раді чути вас! Зв'яжіться з нами будь-яким зручним способом або завітайте до наших залів.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h3>📍 Головний офіс</h3>
+                        <p>м. Київ, вул. Хрещатик, 25</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>📞 Телефони</h3>
+                        <p><a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+                        <p><a href="tel:+380671234567">+38 (067) 123-45-67</a></p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:info@ironcore.ua">info@ironcore.ua</a></p>
+                        <p><a href="mailto:support@ironcore.ua">support@ironcore.ua</a></p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>⏰ Графік роботи</h3>
+                        <p>Пн-Нд: 06:00 - 24:00</p>
+                        <p>Без вихідних</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Напишіть нам</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Повідомлення:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Я хочу записатись на тренування..."></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-large">Надіслати повідомлення</button>
+                    </form>
+                    <div id="formMessage" class="form-result"></div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5283733738096!2d30.520448015731365!3d50.44991597947514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce508931215b%3A0x6b4f622d0e808035!2z0YPQuy4g0KXQutCw0YnQsNGC0LjQuiwgMjUsIDAyMDAw!5e0!3m2!1suk!2sua!4v1646215328222!5m2!1suk!2sua" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="section">
+                <h2>Часті запитання</h2>
+                <div class="faq-item">
+                    <p>Хочете дізнатись більше про правила відвідування?</p>
+                    <button id="accordionBtn" class="btn btn-secondary">Показати правила</button>
+                    
+                    <div id="accordionContent" class="hidden-content" style="display: none; margin-top: 20px; padding: 20px; border-left: 3px solid #ff4500;">
+                        <h3>Правила клубу IronCore</h3>
+                        <p>1. Вхід до залу дозволяється лише у змінному спортивному взутті.</p>
+                        <p>2. Обов'язково використовуйте рушник під час тренувань на тренажерах.</p>
+                        <p>3. Розбирайте ваги (гантелі, штанги) після завершення вправи.</p>
+                        <p>4. Групові тренування проводяться за попереднім записом.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 IronCore. Всі права захищено.</p>
+        </div>
+    </footer>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
