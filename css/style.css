@@ -81,3 +81,42 @@ html {
         transform: translateY(0);
     }
 }
+/* Стилі для темної теми */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+body.dark-theme .card, 
+body.dark-theme header, 
+body.dark-theme footer {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+body.dark-theme a {
+    color: #4CAF50; /* Приклад зміни кольору посилань */
+}
+
+/* Стиль для підсвітки меню*/
+.nav-menu li a.active-hover {
+    background-color: #ff4500; /* Помаранчевий IronCore */
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Стилі для валідації форми */
+input.error, textarea.error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    height: 1.2em; /* Фіксована висота, щоб не стрибало */
+}
+.form-result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+}
